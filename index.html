@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="https://bam.nr-data.net/1/1beac94c95?a=3343327&amp;v=1173.01dd3ba&amp;to=NQQGYUZWDUNSVUMPWQxOIkBaVBdZXFgYCUYHDwFRTBkAX0FTGQJcAw8DWlVHE0MdVVgIQgcPEEZRRRVVQRhaD1IGDQFCVUUGCmBCVhJfASILW0BSDURgU0UQUxA%3D&amp;rst=774&amp;ck=1&amp;ref=https://courses.edx.org/asset-v1:PennX%2BSD4x%2B3T2019%2Btype@asset%2Bblock/2.9-jquery-list.html&amp;qt=1&amp;ap=22&amp;be=532&amp;fe=743&amp;dc=616&amp;af=err,xhr,stn,ins,spa&amp;perf=%7B%22timing%22:%7B%22of%22:1596982238117,%22n%22:0,%22u%22:434,%22ue%22:434,%22f%22:1,%22dn%22:1,%22dne%22:1,%22c%22:1,%22ce%22:1,%22rq%22:14,%22rp%22:423,%22rpe%22:426,%22dl%22:449,%22di%22:616,%22ds%22:616,%22de%22:622,%22dc%22:740,%22l%22:743,%22le%22:753%7D,%22navigation%22:%7B%22ty%22:1%7D%7D&amp;fp=651&amp;at=GUMRFw5MQVNcUlI5WRUPAUcWDUFAX1dDAFkQDElBWltBHBFVWAhCBw8QRlFFFVVBGFEUWQ8%2BB1FaFVlWUlpEAxpAAgtRUWgMR11TRTlCEAAKRlVUF1lcWGgIVw8ERg8WWBNVXVNTHhgBDhZQGlMJUV1RWAdGEhJKVltZF1VdQkQDRBQEFhtZXgdUX1NAB0QHWzdBVUMKU3BZWRJTDBU3UEZBBkIRGhUFWRcTF1BrXgcSCRRUCUMQEgEYQgZZYFZYWT4dMSVQTR8ENwIDBw5EGkACC1tAUg1EQFNFEFMQTxRUQF9BChEEGV8bCBARUEZOTlxaRUNIXhYMCBcYFQBfXUJSCEIRBBZDUUVNU1xYQwNYFj4IUFoVWQQFAhtEVQ0PEFBaQxBVQUBSFBgODgdeUVNBClVXWxVTTkMHWlpDBl5HRVIUQAcTSlZbWRdVXUJoEk8SBEYPFkMGSEcZXxJbDkNIF1dYDURWWEMVUxAXAUcaVAJTW1NWBFoHQ15BRkIGHBFZRQEUWEM0UFpZOxJOSw%3D%3D&amp;jsonp=NREUM.setToken"></script>
+    <meta charset="UTF-8">
+    <title>using jquery</title>
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<input id="itemField">
+<p>
+
+</p>
+<ul>
+   <span id="list"></span>
+</ul>
+<script>
+    function keyPressHandler (e) {
+        if  (e.keyCode === 13) {
+            $('#list').append('<li>' + $('#itemField').val() + '</li>');
+            $('#itemField').val('');
+        }
+    }
+
+    $('#itemField').keyup(keyPressHandler); // register function in the box
+</script>
+</body>
+</html>
